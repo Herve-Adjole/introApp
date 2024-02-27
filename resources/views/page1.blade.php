@@ -1,30 +1,7 @@
-@extends('main')
+@extends('layouts.app')
 
 @section('content')
-    <style>
-        
-        body {
-            background-color: #12372A;
-            color: #ADBC9F;
-        }
 
-        h2, h3 {
-            color: #436850;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-    </style>
 
     <h2>Welcome to the Exciting World of Laravel!</h2>
     <p>

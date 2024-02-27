@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Ma Page Principale</title>
-    <style>
-        *{
+*{
     margin: 0;
     padding: 0;
 }
@@ -79,28 +73,19 @@ main {
     z-index: 0;
 }
 
-    </style>
-</head>
-<body>
-    <header>
-        
+main h2, h3 {
+    color: #436850;
+}
 
-        <h1>IAI LARAVEL</h1>
-        
+main ul {
+    list-style: none;
+    padding: 0;
+}
 
-    </header>
-    <nav>
-        
-        <ul>
-            <li><a href="{{ route('page1') }}">Page 1</a></li>
-            <li><a href="{{ route('page2') }}">Page 2</a></li>
-            <li><a href="{{ route('page3') }}">Page3</a></li>
-           
-        </ul>
-    </nav>
-    <main>
-        <!-- Zone réservée pour le contenu dynamique -->
-        @yield('content')
-    </main>
-</body>
-</html>
+main li {
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 20px;
+}

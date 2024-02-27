@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('main');
+    return view('layouts.app');
 });
 
 use App\Http\Controllers\PageController;
