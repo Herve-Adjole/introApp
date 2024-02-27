@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdditionController;
+use App\Http\Controllers\MultiplicationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +24,11 @@ Route::get('/', function () {
 
 use App\Http\Controllers\PageController;
 
-Route::get('/page1', [PageController::class, 'page1'])->name('page1');
-Route::get('/page2', [PageController::class, 'page2'])->name('page2');
+Route::get('/addition', [AdditionController::class, 'index'])->name('addition');
+Route::post('/additionSimple', [AdditionController::class, 'additionSimple'])->name('additionSimple');
+
+Route::get('/multiplication', [MultiplicationController::class, 'index'])->name('multiplication');
+Route::post('/multiplication', [MultiplicationController::class, 'multiplication'])->name('multiplication');
+
 Route::get('/page3', [PageController::class, 'page3'])->name('page3');
 
