@@ -27,6 +27,7 @@ use App\Http\Controllers\PageController;
 Route::get('/addition', [AdditionController::class, 'index'])->name('addition');
 Route::post('/additionSimple', [AdditionController::class, 'additionSimple'])->name('additionSimple');
 
+
 Route::get('/multiplication', [MultiplicationController::class, 'index'])->name('multiplication');
 Route::post('/multiplication', [MultiplicationController::class, 'multiplication'])->name('multiplication');
 

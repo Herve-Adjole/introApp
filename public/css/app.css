@@ -62,16 +62,18 @@ nav a:hover {
 }
 
 main {   
-    border: 2px solid black;
-
     margin-left: 160px;
     margin-top: 110px;
     height: 100vh;
-    flex: 1;
     padding: 20px;
     position: fixed;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 180px;
 }
+
 
 main h2, h3 {
     color: #436850;
@@ -88,4 +90,65 @@ main li {
 
 main p {
     margin-bottom: 20px;
+}
+
+.result {
+    background-color: #BFD8AF;
+    color: #12372A;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/**/
+.formular form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #BFD8AF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formular h2 {
+    color: #12372A;
+}
+
+.result {
+    background-color: #BFD8AF;
+    color: #12372A;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.formular table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.formular table td {
+    padding: 10px;
+}
+
+.formular input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.formular input[type="submit"] {
+    background-color: #12372A;
+    color: #BFD8AF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formular input[type="submit"]:hover {
+    background-color: #436850;
 }

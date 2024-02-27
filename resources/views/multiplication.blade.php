@@ -3,9 +3,10 @@
 @section('content')
 
 <h2>MULTIPLICATION!</h2>
-    <div>
+<div class="result">
         {{$resultat}}
     </div>
+    <div class="formular">
     <form action="{{ route('multiplication')}}" method="POST" >
     @csrf
     <table>
@@ -22,4 +23,5 @@
         </tr>
     </table>
     </form>
+    </div>
 @endsection
