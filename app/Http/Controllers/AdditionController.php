@@ -16,6 +16,6 @@ class AdditionController extends Controller
 
     public function additionSimple(Request $request){
         $somme=$request->a+$request->b;
-        return view("addition")->with('somme',$somme);
+        return view('addition')->with('somme',$somme);
     }
 }

@@ -5,6 +5,8 @@ use App\Http\Controllers\AdditionController;
 use App\Http\Controllers\MultiplicationController;
 
 
+use App\Http\Controllers\PageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +24,7 @@ Route::get('/', function () {
     return view('layouts.app');
 });
 
-use App\Http\Controllers\PageController;
+
 
 Route::get('/addition', [AdditionController::class, 'index'])->name('addition');
 Route::post('/additionSimple', [AdditionController::class, 'additionSimple'])->name('additionSimple');
