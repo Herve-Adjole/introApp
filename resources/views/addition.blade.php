@@ -4,9 +4,13 @@
 
 
     <h2>ADDITION!</h2>
+
+
     <div class="result">
         {{$somme}}
     </div>
+
+
     <div class="formular">
     <form action="{{ route('additionSimple')}}" method="POST" >
     @csrf
@@ -25,5 +29,5 @@
     </table>
     </form>
     </div>
-
+    @include("layouts.addition-result")
 @endsection

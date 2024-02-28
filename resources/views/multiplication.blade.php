@@ -1,11 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-
 <h2>MULTIPLICATION!</h2>
+
+
+
 <div class="result">
         {{$resultat}}
     </div>
+
+
+
     <div class="formular">
     <form action="{{ route('multiplication')}}" method="POST" >
     @csrf
@@ -24,4 +29,5 @@
     </table>
     </form>
     </div>
+    @include("layouts.multiplication-result")
 @endsection
